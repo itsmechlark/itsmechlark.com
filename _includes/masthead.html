@@ -20,6 +20,12 @@
         </a>
       </div>
     {% endif %}
+    <div class="{{ metadata_styles }}">
+      {% octicon file height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file %}
+      <a href="https://github.com/itsmechlark/CV">
+      Resumé
+      </a>
+    </div>
     {% if user.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
